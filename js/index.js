@@ -40,3 +40,60 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// 
+const header = document.querySelector("header");
+const nav = document.querySelector("header nav");
+
+
+let navItem = document.querySelectorAll('nav a');
+
+navItem[0].textContent = siteContent.nav["nav-item-1"];
+navItem[1].textContent = siteContent.nav["nav-item-2"];
+navItem[2].textContent = siteContent.nav["nav-item-3"];
+navItem[3].textContent = siteContent.nav["nav-item-4"];
+navItem[4].textContent = siteContent.nav["nav-item-5"];
+
+let logoImg = document.querySelector("#logo-img");
+logoImg.src = "img/logo.png";
+
+let ctaText = document.querySelector(".cta-text h1");
+ctaText.textContent = "DOM Is Awesome";
+
+let button = document.querySelector("button");
+button.textContent = "Get Started";
+
+let ctaImg = document.querySelector("#cta-img");
+ctaImg.src="img/header-img.png"
+
+let MainTextContentH4 = document.querySelectorAll(".top-content .text-content h4")
+let MainTextContentP = document.querySelectorAll(".text-content p")
+
+MainTextContentH4[0].textContent = "Features";
+MainTextContentP[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+MainTextContentH4[1].textContent = "About";
+MainTextContentP[1].textContent = "bout content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+let middleImg = document.querySelector("#middle-img");
+middleImg.src = "img/mid-page-accent.jpg";
+
+let BottomTextContentH4 = document.querySelectorAll(".bottom-content .text-content h4");
+let BottomTextContentP = document.querySelectorAll(".bottom-content p");
+
+BottomTextContentH4[0].textContent = "Services";
+BottomTextContentP[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+BottomTextContentH4[1].textContent = "Product";
+BottomTextContentP[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+BottomTextContentH4[2].textContent = "Vision";
+BottomTextContentP[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+let contactH4 = document.querySelector(".contact h4");
+let contactP = document.querySelectorAll(".contact p");
+
+contactH4.textContent="Contact";
+contactP[0].textContent="123 Way 45 Street Somwehere, USA";
+contactP[1].textContent="1(888)888-8888";
+contactP[2].textContent="sales@greatidea.io";
+
+let footer = document.querySelector("footer p");
+footer.textContent = "Copyright Great Idea! 2018";
