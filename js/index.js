@@ -48,17 +48,44 @@ const nav = document.querySelector("header nav");
 
 let navItem = document.querySelectorAll('nav a');
 
+
 navItem[0].textContent = siteContent.nav["nav-item-1"];
 navItem[1].textContent = siteContent.nav["nav-item-2"];
 navItem[2].textContent = siteContent.nav["nav-item-3"];
 navItem[3].textContent = siteContent.nav["nav-item-4"];
 navItem[4].textContent = siteContent.nav["nav-item-5"];
+navItem[5].textContent = siteContent.nav["nav-item-6"];
+
+siteContent.nav["nav-item-7"]="Google";
+siteContent.nav["nav-item-8"]="Yahoo";
+
+///////////////
+let one = document.createElement('a');
+let two = document.createElement('a');
+
+one.setAttribute("href", "google.com");
+one.textContent = "Google";
+one.style.color = "green";
+two.setAttribute("href", "yahoo.com");
+two.textContent = "Yahoo";
+two.style.color = "green";
+nav.prepend(one);
+nav.appendChild(two);
+
+
+
+
+navItem.forEach((item) =>{item.style.color = "green";});
+
+
+/////////////
+
 
 let logoImg = document.querySelector("#logo-img");
 logoImg.src = "img/logo.png";
 
 let ctaText = document.querySelector(".cta-text h1");
-ctaText.textContent = "DOM Is Awesome";
+ctaText.textContent = "DOM \n Is \n Awesome";
 
 let button = document.querySelector("button");
 button.textContent = "Get Started";
