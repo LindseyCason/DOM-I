@@ -124,3 +124,19 @@ contactP[2].textContent="sales@greatidea.io";
 
 let footer = document.querySelector("footer p");
 footer.textContent = "Copyright Great Idea! 2018";
+
+
+///styling////
+
+let body = document.querySelector("body");
+body.style.backgroundColor = "#f8e2ff";
+nav.style.backgroundColor= "#4bd67a";
+nav.style.textShadow="2px 2px 2px white"
+nav.style.padding="20px";
+nav.style.border = "2px solid black";
+nav.style.width="100%";
+button.style.backgroundColor = "#4bd67a";
+ctaText.style.color = "#4bd67a";
+ctaText.style.textShadow = "5px 5px 5px black";
+let test = document.getElementById("cta-img");
+test.style.opacity= .75;
